@@ -1,0 +1,392 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/localForage/localForage">localforage (v1.5.0)</a>
+</h1>
+<h4>Offline storage, improved.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.localforage">module localforage</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">localforage.</span>_ready</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.clear">
+            function <span class="apidocSignatureSpan">localforage.</span>clear
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.getItem">
+            function <span class="apidocSignatureSpan">localforage.</span>getItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.iterate">
+            function <span class="apidocSignatureSpan">localforage.</span>iterate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.key">
+            function <span class="apidocSignatureSpan">localforage.</span>key
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.keys">
+            function <span class="apidocSignatureSpan">localforage.</span>keys
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.length">
+            function <span class="apidocSignatureSpan">localforage.</span>length
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.removeItem">
+            function <span class="apidocSignatureSpan">localforage.</span>removeItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.localforage.setItem">
+            function <span class="apidocSignatureSpan">localforage.</span>setItem
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">localforage.</span>_config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">localforage.</span>_dbInfo</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">localforage.</span>_defaultConfig</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">localforage.</span>_driverSet</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">localforage.</span>_initDriver</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">localforage.</span>INDEXEDDB</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">localforage.</span>LOCALSTORAGE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">localforage.</span>WEBSQL</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.localforage" id="apidoc.module.localforage">module localforage</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.clear" id="apidoc.element.localforage.clear">
+        function <span class="apidocSignatureSpan">localforage.</span>clear
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clear = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.getItem" id="apidoc.element.localforage.getItem">
+        function <span class="apidocSignatureSpan">localforage.</span>getItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getItem = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+localForage uses localStorage in browsers with no IndexedDB or
+WebSQL support. See [the wiki for detailed compatibility info][supported browsers].
+
+To use localForage, just drop a single JavaScript file into your page:
+
+```html
+&lt;script src="localforage.js"&gt;&lt;/script&gt;
+&lt;script&gt;localforage.<span class="apidocCodeKeywordSpan">getItem</span>('something', myCallback);&lt;/script
+&gt;
+```
+
+Download the [latest localForage from GitHub](https://github.com/localForage/localForage/releases/latest), or install with
+[npm](https://www.npmjs.com/):
+
+```bash
+npm install localforage
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.iterate" id="apidoc.element.localforage.iterate">
+        function <span class="apidocSignatureSpan">localforage.</span>iterate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">iterate = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.key" id="apidoc.element.localforage.key">
+        function <span class="apidocSignatureSpan">localforage.</span>key
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">key = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.keys" id="apidoc.element.localforage.keys">
+        function <span class="apidocSignatureSpan">localforage.</span>keys
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keys = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.length" id="apidoc.element.localforage.length">
+        function <span class="apidocSignatureSpan">localforage.</span>length
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">length = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.removeItem" id="apidoc.element.localforage.removeItem">
+        function <span class="apidocSignatureSpan">localforage.</span>removeItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeItem = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.localforage.setItem" id="apidoc.element.localforage.setItem">
+        function <span class="apidocSignatureSpan">localforage.</span>setItem
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setItem = function () {
+    var _args = arguments;
+    return localForageInstance.ready().then(function () {
+        return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+localForage has a dual API that allows you to either use Node-style callbacks
+or [Promises](https://www.promisejs.org/). If you are unsure which one is right for you, it's recommended to use Promises.
+
+Here's an example of the Node-style callback form:
+
+```js
+localforage.<span class="apidocCodeKeywordSpan">setItem</span>('key', 'value', function (err) {
+  // if err is non-null, we got an error
+  localforage.getItem('key', function (err, value) {
+    // if err is non-null, we got an error. otherwise, value is the value
+  });
+});
+```
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
