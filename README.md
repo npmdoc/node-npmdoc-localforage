@@ -1,6 +1,6 @@
 # npmdoc-localforage
 
-#### api documentation for  [localforage (v1.5.0)](https://github.com/localForage/localForage)  [![npm package](https://img.shields.io/npm/v/npmdoc-localforage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-localforage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-localforage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-localforage)
+#### basic api documentation for  [localforage (v1.5.0)](https://github.com/localForage/localForage)  [![npm package](https://img.shields.io/npm/v/npmdoc-localforage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-localforage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-localforage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-localforage)
 
 #### Offline storage, improved.
 
@@ -99,7 +99,8 @@
         "test": "node -e \"require('grunt').cli()\" null test"
     },
     "typings": "typings/localforage.d.ts",
-    "version": "1.5.0"
+    "version": "1.5.0",
+    "bin": {}
 }
 ```
 
