@@ -221,24 +221,7 @@
         return localForageInstance[libraryMethod].apply(localForageInstance, _args);
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-localForage uses localStorage in browsers with no IndexedDB or
-WebSQL support. See [the wiki for detailed compatibility info][supported browsers].
-
-To use localForage, just drop a single JavaScript file into your page:
-
-```html
-&lt;script src="localforage.js"&gt;&lt;/script&gt;
-&lt;script&gt;localforage.<span class="apidocCodeKeywordSpan">getItem</span>('something', myCallback);&lt;/script
-&gt;
-```
-
-Download the [latest localForage from GitHub](https://github.com/localForage/localForage/releases/latest), or install with
-[npm](https://www.npmjs.com/):
-
-```bash
-npm install localforage
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -346,22 +329,7 @@ npm install localforage
         return localForageInstance[libraryMethod].apply(localForageInstance, _args);
     });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-localForage has a dual API that allows you to either use Node-style callbacks
-or [Promises](https://www.promisejs.org/). If you are unsure which one is right for you, it's recommended to use Promises.
-
-Here's an example of the Node-style callback form:
-
-```js
-localforage.<span class="apidocCodeKeywordSpan">setItem</span>('key', 'value', function (err) {
-  // if err is non-null, we got an error
-  localforage.getItem('key', function (err, value) {
-    // if err is non-null, we got an error. otherwise, value is the value
-  });
-});
-```
-...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
